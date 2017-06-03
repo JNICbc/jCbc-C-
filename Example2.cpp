@@ -1,5 +1,5 @@
 #include<iostream>
-#include"jCbc.hpp"
+#include"jCbc.cpp"
 #include<string>
 
 using namespace std;

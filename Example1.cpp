@@ -1,6 +1,6 @@
 
 #include<iostream>
-#include"jCbc.hpp"
+#include"jCbc.cpp"
 #include<string>
 
 using namespace std;
@@ -8,7 +8,6 @@ int main ()
 
 
 {
-  
   CoinModel* modelObject = new  CoinModel();
         
         OsiClpSolverInterface * solver =  new OsiClpSolverInterface();
@@ -17,7 +16,7 @@ int main ()
         double upper[] = {1.0, 10.0, MAXX};
         double lower[] = {0.0,-MAXX, 2.0};
         
-        
+
         //define variables:
       addCol(modelObject,lower[0],upper[0],objValue[0],"x1",true);
       addCol(modelObject,lower[1],upper[1],objValue[1],"x2",false);
